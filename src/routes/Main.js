@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Test from "../components/test/test";
+import { Switch} from "react-router-dom";
 
 const Main = () => {
   return (
-    <Router>
+    <div>
       <Switch>
-        <Route path="/" component={Test} />
+        
       </Switch>
-    </Router>
+    </div>
+
   );
 };
 
