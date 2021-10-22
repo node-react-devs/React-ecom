@@ -124,8 +124,8 @@ const NavBar = () => {
 
    </Box>
      
-       <Input {...input.style} pos='fixed' top='93px'  variant='outline' placeholder='search' bg='white' m='10px' ref={sInput=>React.sInput=sInput}  onBlur={handleBlur} transition='all ease-in-out 0.5s' />
-      <Box mx={['10px','15px','30px']} roundedBottom='full' shadow='xl' p='10px' pos='fixed' top='93px' right={['1px','5px','10px','15px']} _hover={{cursor:'pointer'}} onClick={handleSearch} >
+       <Input {...input.style} pos='fixed' top='93px' zIndex='3'  variant='outline' placeholder='search' bg='white' m='10px' ref={sInput=>React.sInput=sInput}  onBlur={handleBlur} transition='all ease-in-out 0.5s' />
+      <Box zIndex='3' mx={['10px','15px','30px']} roundedBottom='full' shadow='xl' p='10px' pos='fixed' top='93px' right={['1px','5px','10px','15px']} _hover={{cursor:'pointer'}} onClick={handleSearch} >
         <Img boxSize={['35px']} src={search} alt='search' filter='invert(1)' />
       </Box>
  
