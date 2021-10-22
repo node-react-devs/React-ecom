@@ -36,7 +36,7 @@ export default function SideMenu() {
                 finalFocusRef={btnRef}
             >
                 <DrawerOverlay />
-                <DrawerContent bg='purple.100' >
+                <DrawerContent bg='purple.100'  >
                     <DrawerCloseButton />
                     <DrawerHeader>LabTeck</DrawerHeader>
 

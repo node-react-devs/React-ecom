@@ -61,17 +61,16 @@ function VerseOne() {
     }, [tran])
 
 
-    const arrStyle = { color: 'white', fontSize: '3em', margin: '6px' }
     return (
-        <Flex pt='20px' direction={['column-reverse','column-reverse','column-reverse','row']} width='100%' overflow='hidden' >
-            <Flex direction='column' color='white' my={['10px','60px']} px={['10px','70px','70px','12px']} py= {['10px','20px','20px','12px']}
-             height={[size*0.9,size*0.5,size*0.5,size * 0.31]} justify='space-between'  >
+        <Flex pt='20px' direction={['column-reverse','column-reverse','column-reverse','row']} width='100%'  overflowX='hidden' >
+            <Flex direction='column' color='white' my={['1px','1px','60px']} px={['10px','70px','70px','12px']} py= {['10px','20px','20px','12px']}
+             height={['fit-content','fit-content',size*0.5,size * 0.33]} justify='space-between'  >
                 {data2.map((D, i) => 
-                    <Flex key={i + 'si'} border='3px solid #c7b3ff' p={['10px','10px','10px','20px']}  width={['100*','100%','100%',size*0.35]}  >
+                    <Flex key={i + 'si'} border='3px solid #c7b3ff' p={['10px','10px','10px','20px']} mb='5px'  width={['100*','100%','100%',size*0.35]}  >
                         <D.icon style={{fontSize:'3em', marginRight:'15px'}} />
                         <Box>
-                            <Heading fontSize={['1.1em','1.2em']} >{D.title}</Heading>
-                            <Text fontSize={['0.9em','1em']}>
+                            <Heading fontSize={['0.9em','1.1em','1.2em']} >{D.title}</Heading>
+                            <Text fontSize={['0.7em','0.9em','1em']}>
                                 {D.content}
                             </Text>
                         </Box>
@@ -79,17 +78,24 @@ function VerseOne() {
                 )}
             </Flex>
             <Spacer />
-            <Box width={[size ,size,size,size * 0.6]} overflow='hidden' pos='relative' >
+            <Box width={[size ,size,size,size * 0.6]} overflowX='hidden' pos='relative' >
                 <Box onClick={() => prevSlide()}
-                    pos='absolute' zIndex='1' boxSize='60px' bg='gray.700' m={['10px', '70px']} cursor='pointer'
+                    pos='absolute' zIndex='1' boxSize={['40px','60px']} bg='gray.700' mx={['10px', '70px']} my={['10px','10px','70px']} cursor='pointer'
                     opacity='0.6' _hover={{ opacity: 0.8, background: 'gray.500' }} 
-                    top={[size*0.25-20,size*0.25-30,size*0.25-30,size * 0.15 - 30]} >
-                    <AiOutlineLeft style={arrStyle} /> </Box>
+                    top={[size*0.25-10,size*0.25-30,size*0.25-30,size * 0.15 - 30]} >
+                        <Text color='white' fontSize={['2em','3em']} margin='6px'>
+                        <AiOutlineLeft  />
+                        </Text>
+                     </Box>
                 <Box onClick={() => nextSlide()}
-                    pos='absolute' zIndex='1' boxSize='60px' bg='gray.700' m={['10px', '70px']} cursor='pointer'
+                    pos='absolute' zIndex='1' boxSize={['40px','60px']} bg='gray.700' m={['10px', '70px']} cursor='pointer'
                     opacity='0.6' _hover={{ opacity: 0.8, background: 'gray.500' }}
-                    top={[size*0.25-20,size*0.25-30,size*0.25-30,size * 0.15 - 30]} right='0' >
-                    <AiOutlineRight style={arrStyle} /> </Box>
+                    top={[size*0.25-10,size*0.25-30,size*0.25-30,size * 0.15 - 30]} right='0' >
+                        <Text color='white' fontSize={['2em','3em']} margin='6px'>
+                        <AiOutlineRight />
+                        </Text>
+                    
+                     </Box>
                 <Box width={[7*size,7*size,7*size,7 * size * 0.6]} pos='relative' display='flex'
                     transition='all ease-in-out 0.5s' 
                     transform={[`translate3d(${-size*tran + 'px'},0px,0px)`,`translate3d(${-size*tran + 'px'},0px,0px)`

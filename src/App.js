@@ -7,7 +7,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 
 function App() {
   return (
-    <Box height='200vh' >
+    <Box>
       <Box pos='fixed' bgGradient="linear(to-l,#591DA9, #051960 )" zIndex='-1' height='100vh' width='100%' top='0' left='0'/>
       <Router>
       <NavBar/>

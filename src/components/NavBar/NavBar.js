@@ -5,6 +5,7 @@ import tech from '../../assets/images/icons8-technology-64.png'
 import {AiFillCaretDown, AiFillHeart, AiOutlineShoppingCart} from 'react-icons/ai'
 import SideMenu from './Drawer'
 import search from '../../assets/images/icons8-search-64.png'
+import cart from '../../assets/images/cart.png'
 
 
 const NavBar = () => {
@@ -106,7 +107,7 @@ const NavBar = () => {
           <Box 
             fontSize='1.8em'
             bg="transparent" _hover={{ color: '#e5d9ff',cursor:'pointer' }} 
-             m='3'> <AiOutlineShoppingCart />
+             m='3'> <Img src={cart} boxSize='35px' />
           </Box>
           <Button
             color='#e5d9ff' fontWeight='bold'
