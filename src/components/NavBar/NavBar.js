@@ -98,7 +98,7 @@ const NavBar = () => {
             _hover={{background:'gray.400'}}
             width={['100px','150px']}
             style={{ border: '3px solid black' }}
-            variant='outline' size='lg' m='3' >Login</Button>
+            variant='outline' size='lg' m='3'  > <NavLink to='/signIn'> Login</NavLink>  </Button>
         </Flex>
         <Box display={['unset','unset','unset','none']}>
         <SideMenu/>
