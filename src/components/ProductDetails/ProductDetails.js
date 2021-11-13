@@ -18,6 +18,7 @@ import {
     MenuList,
     MenuItem
   } from "@chakra-ui/react"
+import Comments from './Comments/Comments';
 
 const  ProductDetails=()=> {
     const data = [
@@ -130,7 +131,7 @@ const  ProductDetails=()=> {
                 </Menu>
                 
                 <Button  backgroundColor="#e5d9ff" size="md">Add to Cart</Button>
-                <Button  backgroundColor="#ea8dff" size="md">Add to Wishlist</Button>
+                <Button  backgroundColor="#e5d9ff" size="md">Add to Wishlist</Button>
                 
                 <Text position="relative" top="20px" fontWeight="thin"  fontSize="20px" 
                 fontFamily="Open Sans', sans-serif"> Rate this product  
@@ -144,12 +145,9 @@ const  ProductDetails=()=> {
                
             </VStack>
         </Stack>
-        <VStack w={[400,600,600,900]}  >
-            <Text alignSelf="center" fontSize="20px" fontFamily="montserrat,sans-serif" position="relative" top="30px" >Add Comment</Text>
-            <HStack padding="10px"  position="relative" w="450px" alignItems="center">
-            <Input top="20px" position="relative" />
-            </HStack>
-            </VStack>
+        <VStack w={[400,600,600,900]} >
+               <Comments currentUserId="1" />
+        </VStack>
 
         </div>
        
