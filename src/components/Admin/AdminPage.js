@@ -46,13 +46,6 @@ export default function Sidebar() {
 
 
         <ChakraProvider >
-
-
-
-
-
-
-
             <Box
                 bg="#F7F6F2"
                 w="100%" align="center"
