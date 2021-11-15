@@ -64,7 +64,7 @@ const  ProductDetails=()=> {
             <NavBar/>
             
     <Stack spacing="35px" direction={["column", "column", "row", "row"]} marginLeft={[50, 100, 100, 200 ]} justifyContent="space-between" w="1200px">
-        <VStack alignItems="flex-start" w="1200px" position="relative" top={[100,100,0,0]}>
+        <VStack alignItems="flex-start" w="1200px" >
             <Carousel
             data={data}
             time={2000}
@@ -81,7 +81,7 @@ const  ProductDetails=()=> {
             />
        </VStack>
             <VStack    alignItems="flex-start">
-                <Text w={[500,700,"auto","auto"]} bottom={[400,550,0,0]} position="relative" fontSize="25px" fontWeight="bold" fontFamily="montserrat,sans-serif" >
+                <Text w={[500,700,"auto","auto"]} fontSize="25px" fontWeight="bold" fontFamily="montserrat,sans-serif" >
                     {productDetails.title}
                 </Text>
                 <Text position="relative" top="20px" fontWeight="medium"  fontSize="22px" fontFamily="Open Sans', sans-serif">
@@ -145,7 +145,7 @@ const  ProductDetails=()=> {
                
             </VStack>
         </Stack>
-        <VStack w={[400,600,600,900]} >
+        <VStack alignItems="flex-start" position="relative" left={[50, 100, 100, 200]}w={[400,600,600,900]} >
                <Comments currentUserId="1" />
         </VStack>
 

@@ -18,18 +18,18 @@ export const getComments = async () => {
     },
     {
       id: "3",
-      body: "First comment first child",
+      body: "Third comment",
       username: "John",
       userId: "2",
-      parentId: "1",
+      parentId: null,
       createdAt: "2021-08-16T23:00:33.010+02:00",
     },
     {
       id: "4",
-      body: "Second comment second child",
+      body: "Forth comment",
       username: "John",
       userId: "2",
-      parentId: "2",
+      parentId: null,
       createdAt: "2021-08-16T23:00:33.010+02:00",
     },
   ];
